@@ -18,8 +18,8 @@ div.mainbanner {
 }
 
 /*Website Header*/
-.heading, .container {
-  width: 960px;
+ .container {
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -31,19 +31,19 @@ div.heading {
   background-color: cadetblue;
   color: white;
   height: 3rem;
-  width: 100%;
+  max-width: 100%;
   justify-content: space-between;
 
 }
-div.rightside {
+div.leftside {
   display: flex;
   align-items: center;
 }
-.rightside img {
+.leftside img {
   height: 1.5rem;
   margin-left: 2rem;
 }
-.rightside span {
+.leftside span {
   margin-left: 1rem;
 }
 
@@ -54,6 +54,9 @@ nav {
 }
 nav span {
   margin: 0 1rem;
+}
+nav .menu {
+  display: none;
 }
 
 /*Headline*/
@@ -141,11 +144,84 @@ h3 {
 .footer {
   display: flex;
   align-items: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: azure;
 }
 .footer img {
   height: 1.5rem;
   margin-left: 4rem;
   margin-right: 1rem
+}
+
+          /*RESPONSIVE CHANGES FOR TABLET VERSION*/
+@media only screen and (max-width: 960px) {
+  div.mainbanner {
+    height: 22rem;
+  }
+
+  /*Heading*/
+  div.heading {
+    top: 0;
+  }
+  /*Headline*/
+  .headline {
+    top: 5rem;
+    left: 0;
+    margin-right: 2rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+    line-height: 1.2;
+    padding: 0.75rem 4rem;
+  }
+}
+
+          /*RESPONSIVE CHANGES FOR MOBILE VERSION*/
+@media only screen and (max-width: 620px) {
+  div.mainbanner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+    /*Heading*/
+  nav span {
+    display: none;
+  }
+  nav .menu {
+    display: flex;
+  }
+  .leftside span {
+    display: none;
+  }
+
+  /*Headline*/
+  .headline {
+    top: 9rem;
+    justify-content: center;
+    margin: 0;
+  }
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /*SERVICES OFFERED BY THE COMPANY*/
+
+.services {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 3.77rem auto;
+border: 1px solid;
+}
+
+
+.exams, .fittings {
+margin-bottom: 1.54rem;
+}
+
 }
