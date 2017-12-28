@@ -17,7 +17,7 @@ div.mainbanner {
   margin: 0 auto;
 }
 
-/*Header*/
+/*Website Header*/
 .heading, .container {
   width: 960px;
   margin: 0 auto;
@@ -46,6 +46,7 @@ div.rightside {
 .rightside span {
   margin-left: 1rem;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -54,6 +55,8 @@ nav {
 nav span {
   margin: 0 1rem;
 }
+
+/*Headline*/
 .headline {
   display: flex;
   position: relative;
@@ -67,4 +70,82 @@ h1 {
   line-height: 1.2;
   padding: 1.5rem 5rem;
   background-color: white;
+}
+
+            /*SERVICES OFFERED BY THE COMPANY*/
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.exams, .fittings, .delivery {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+}
+.exams img {
+  display: block;
+  max-width: 3.5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.delivery img, .fittings img {
+  display: block;
+  max-width: 5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+            /*ABOUT THE COMPANY*/
+.business-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.philosophy {
+  display: block;
+  width: 35%;
+  margin-right: 5%;
+}
+
+.appointments {
+  display: block;
+  width: 35%;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  max-width: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+                    /*FOOTER*/
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.footer img {
+  height: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem
 }
