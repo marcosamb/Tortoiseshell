@@ -151,7 +151,7 @@ h3 {
 .footer img {
   height: 1.5rem;
   margin-left: 4rem;
-  margin-right: 1rem
+  margin-right: 1rem;
 }
 
           /*RESPONSIVE CHANGES FOR TABLET VERSION*/
@@ -208,20 +208,68 @@ h3 {
     padding: 1rem;
   }
 
-  /*SERVICES OFFERED BY THE COMPANY*/
+  /*Services Offered by the Company*/
 
 .services {
-display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
 margin: 3.77rem auto;
-border: 1px solid;
 }
 
 
 .exams, .fittings {
 margin-bottom: 1.54rem;
+margin-top: 0;
+font-size: 0.77rem;
+height: 7rem;
+}
+.delivery {
+margin-top: 0;
+margin-bottom: 0;
+font-size: 0.77rem;
+height: 6rem;
+}
+
+/*About the Company*/
+.business-info {
+flex-direction: column;
+font-size: 0.77rem;
+}
+
+.philosophy {
+width: 100%;
+margin-right: 0;
+margin-bottom: 4rem;
+}
+
+.appointments {
+width: 100%;
+}
+.philosophy p {
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+}
+
+.appointments p {
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+}
+
+
+h3 {
+text-align: center;
+max-width: 100%;
+padding: 0.5rem auto;
+}
+
+/*Footer*/
+.footer {
+  align-items: center;
+}
+.footer span {
+display: none;
+}
+.footer img {
+margin: auto;
 }
 
 }
